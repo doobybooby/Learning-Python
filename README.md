@@ -8,9 +8,9 @@ Here are some problems and you have to write a function for each problem. As you
 
 >>hint: input nothing, return "Hello"
 
-python
+```python
 def printHello():
-  print("Hello")
-
+    print("Hello")
+```
 
 ##Problem 2
