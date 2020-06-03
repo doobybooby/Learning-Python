@@ -33,11 +33,12 @@ def checkDog(string)
 
 >Define a fuction that returns the Pig Latin of the string
 
->Pig Latin: 
+>* Pig Latin: 
 > If the string DOESN'T start with a VOWEL, return the string + "ay". If the string START with a VOWEL, return the string without the first letter + "first letter" + "ay"
 
-> Example, pigLatin("banana"). Return "banana ay"
-> Example, pigLatin("elevator"). Returns "levator eay" 
+> * Example, pigLatin("banana"). Return "banana ay"
+
+> * Example, pigLatin("elevator"). Returns "levator eay" 
 
 ```python
 #grab the first letter
