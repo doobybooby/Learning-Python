@@ -6,7 +6,7 @@ Here are some problems and you have to write a function for each problem. As you
 
 >Define a function that prints "Hello"
 
->*. hint:input nothing, return "Hello"
+>* _HINT:input nothing, return "Hello"_
 
 ```python
 def printHello():
