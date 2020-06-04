@@ -33,12 +33,14 @@ def checkDog(string)
 
 >Define a fuction that returns the Pig Latin of the string
 
->* Pig Latin: 
+> Pig Latin: 
 > If the string DOESN'T start with a VOWEL, return the string + "ay". If the string START with a VOWEL, return the string without the first letter + "first letter" + "ay"
 
 > * Example, pigLatin("banana"). Return "banana ay"
 
 > * Example, pigLatin("elevator"). Returns "levator eay" 
+
+> * HINT: slice and index 
 
 ```python
 #grab the first letter
@@ -50,4 +52,46 @@ def pigLatin(mystr)
         return mystr[1:]+firstLet+"ay"
     else:
         return mystr+"ay"
+```
+
+**Problem 4**
+
+>Define a function that capitalizes every other letter
+
+>* EX: "aBcDeF"
+
+>* HINT: convert everything to lower case first and concatinate  
+
+```python
+def alternatingCapital(string):
+   
+    ans = ""
+    
+    for i in range(len(string)):
+        if i%2==1:
+            ans += string[i].lower()
+        else:
+            ans += string[i].upper()
+    return ans
+
+
+```
+
+**Problem 5**
+
+>Define a function, that takes in two numbers, and if both numbers are even return the lower number, else return the lower number
+
+>* EX: lesserOfTwoEven(4,10), Returns 4
+
+>* EX: lesserOfTwoEven(5,11), Return 11
+
+>* EX: lesserOfTwoEven(8,13), Return 13
+
+```python
+def lesserOfTwoEven(a,b):
+ 
+    if a%2==0 and b%2 ==0:
+        return min(a,b)
+    else:
+        return max(a,b)
 ```
