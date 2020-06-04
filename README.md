@@ -2,11 +2,10 @@
 
 Here are some problems and you have to write a function for each problem. As you progress the problem gets more difficult (answers included).
 
-**Problem 1**
+**Problem 1** - printHello()
 
 >Define a function that prints "Hello"
 
->* _HINT: Input nothing, return "Hello"_
 
 ```python
 def printHello():
@@ -14,11 +13,10 @@ def printHello():
 ```
 
 
-**Problem 2**
+**Problem 2** - checkDog(string)
 
->Define a function that returns True if the string contrains the word "dog"
+>Define a function that returns True if the string contrains the word "dog", else False.
 
->* _HINT: Input a string, returns T/F
 
 ```python
 def checkDog(string)
@@ -29,7 +27,7 @@ def checkDog(string)
     return 'dog' in string.lower()
 ```
 
-**Probelm 3**
+**Probelm 3** - pigLatin(string)
 
 >Define a fuction that returns the Pig Latin of the string
 
@@ -54,7 +52,7 @@ def pigLatin(mystr)
         return mystr+"ay"
 ```
 
-**Problem 4**
+**Problem 4** - alternatingCapital(string)
 
 >Define a function that capitalizes every other letter
 
@@ -77,7 +75,7 @@ def alternatingCapital(string):
 
 ```
 
-**Problem 5**
+**Problem 5** - lesserOfTwoEven(a,b)
 
 >Define a function, that takes in two numbers, and if both numbers are even return the lower number, else return the lower number
 
@@ -94,4 +92,54 @@ def lesserOfTwoEven(a,b):
         return min(a,b)
     else:
         return max(a,b)
+```
+
+**Problem 6** - animalCracker(string)
+
+>Define a function, that takes two strings and return true if both string starts with the same letter
+
+>* EX: animalCracker("Wild Wolf"), return True
+
+>* EX: animalCracker("Cracky Kangaroo"), return False
+
+>* HINT: use .split()
+
+```python
+def animalCracker(text):
+
+    ans = text.lower().split()
+    return ans[0][0]==ans[1][0]
+```
+
+**Problem 7** - makesTwenty(a,b)
+
+>Define a function, that takes in two number and return true if either number is "20" or the sum of two number is "20"
+
+```python
+def makesTwenty(a,b):
+
+    return a == 20 or b ==20 or (a+b) ==20
+
+```
+
+**Problem 8** - oldMacDonald(name)
+> Define a fuction that takes in a name and capitalize the first and the fourth letter of the name
+
+>* EX: oldMacDonald("macdonald"), Return "MacDonald"
+
+>* EX: oldMacDonald("james"), Return "JamEs"
+
+>* EX: oldMacDonald("tom"), Returns "Tom"
+
+```python
+def oldMacdonald(name = "Name"):
+
+    ans = ""
+    for i in range(len(name)):
+        if i == 0 or i == 3:
+            ans+=name[i].upper()
+        else:
+            ans+=name[i].lower()
+    
+    return ans
 ```
