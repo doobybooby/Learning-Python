@@ -42,13 +42,12 @@ def checkDog(string)
 
 ```python
 #grab the first letter
+def pigLatin(mystr)
     firstLet = mystr[0]
     
     #check if first letter is a vowel 
     if firstLet in 'aeiou':
-        print("Starts with a vowel")
         return mystr[1:]+firstLet+"ay"
     else:
-        print("doesn't tarts with a vowel")
         return mystr+"ay"
 ```
