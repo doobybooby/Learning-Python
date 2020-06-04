@@ -38,7 +38,7 @@ def checkDog(string)
 
 > * Example, pigLatin("elevator"). Returns "levator eay" 
 
-> * HINT: slice and index 
+> * Key Concept: slice and index 
 
 ```python
 #grab the first letter
@@ -58,7 +58,7 @@ def pigLatin(mystr)
 
 >* EX: "aBcDeF"
 
->* HINT: convert everything to lower case first and concatinate  
+>* Key Concept: convert everything to lower case first and concatinate  
 
 ```python
 def alternatingCapital(string):
@@ -102,7 +102,7 @@ def lesserOfTwoEven(a,b):
 
 >* EX: animalCracker("Cracky Kangaroo"), return False
 
->* HINT: use .split()
+>* Key Concept: use .split()
 
 ```python
 def animalCracker(text):
