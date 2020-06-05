@@ -194,3 +194,44 @@ def has33(nums):
     return False
 
 ```
+
+**Problem 12** - paperDoll(text)
+
+> Define a function that will repeat each character three times
+
+>* EX: "Hey", Returns "HHHeeeyyy"
+
+>* EX: "race car", Returns "rrraaaccceee   cccaaarrr"
+
+```python
+def paperDoll(text):
+    '''
+    input a text
+    output copy each letter of text 3 times
+    example "hey -> hhheeeyyy"
+    '''
+    ans = ""
+    for i in text:
+        ans+=i+i+i
+    return ans
+
+```
+
+**Problem 13** - blackJack(a,b,c)
+> Define a function that does blackJack. If the sum of int a+b+c less than 21. Return the number. If at least one of a/b/c is 11 reduce it to 1 then return the sum. If the sum is greater than 21, return "Bust!"
+
+>* EX: blackJack(4,5,8), Returns 17
+
+>* EX: blackJack(11,8,7), Returns 16
+
+```python 
+def blackJack(a,b,c):
+
+    if sum([a,b,c])<= 21:
+        return a+b+c
+    else:
+        if 11 in [a,b,c] and sum([a,b,c])<=31:
+            return a+b+c -10
+        else:
+            return "Bust!"
+```
