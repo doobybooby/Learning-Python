@@ -143,3 +143,54 @@ def oldMacdonald(name = "Name"):
     
     return ans
 ```
+
+**Problem 9** - masterYoda(text)
+> Define a function that reverse the order of the text
+
+>* EX: "How are you", Returns "you are How"
+
+>* EX: "May the force be with you", Returns "you with be force the May"
+
+```python
+def masterYoda(text):
+    
+    listword = text.split()
+    reversedList = listword[::-1]
+    print(reversedList)
+    return " ".join(reversedList)
+```
+
+**Problem 10** - almostThere(n)
+>Define a function that returns True if the number is between 90-110 or 190-210, inclusive
+
+>* EX: almostThere(10), Returns False
+
+>* EX: almostThere(90), Returns True
+
+```python
+def almostThere(n):
+  
+    return (abs(100-n)<=10) or (abs(200-n)<=10)
+
+```
+
+**Problem 11** - has33(intlist)
+> Define a function that checks if the list contains two consecutive 3.
+
+>* EX: has33([1,2,3,4,5,6]), Returns False
+
+>* EX: has33([1,2,3,3,4,5]), Returns True
+
+```python 
+def has33(nums):
+    
+    if len(nums)==1:
+        return False
+    else:
+        for i in range(1,len(nums)):
+            if nums[i] == 3 and nums[i-1]==3:
+                return True
+    
+    return False
+
+```
