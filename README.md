@@ -235,3 +235,33 @@ def blackJack(a,b,c):
         else:
             return "Bust!"
 ```
+
+**Problem 14** - summerOf69(arrlist)
+> Define a function that returns the sum of a list UNLESS, there is 6 then you don't add until there is a 9, then continue adding
+
+>* EX: summerOf69([1,2,3,4,5]), Returns 15
+
+>* EX: summerOf69([1,2,3,4,5,6,7,8,9), Returns 15
+
+>* EX: summerOf69([2,3,6,4,9,5]), Returns 10
+
+```python
+def summerOf69(arr):
+
+    total = 0
+    add = True
+    for num in arr:
+        while add:
+            if num!=6:
+                total+=num
+                break
+            else:
+                add = False
+        while not add:
+            if num!=9:
+                break
+            else:
+                add = True
+                break
+    return total
+```
