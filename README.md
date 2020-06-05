@@ -265,3 +265,25 @@ def summerOf69(arr):
                 break
     return total
 ```
+
+**Problem 15** - spyGame(arr)
+> Define a function that checks if the list contains the sequence 007.
+
+>* EX: spyGame([1,2,0,0,7,3,4]), Returns True
+
+>* EX: spyGame([1,0,2,0,3,7,4]), Returns True
+
+>* EX: spyGame([1,0,7,0,2]), Returns False
+
+>* HINT: you can solve this like the summerOf69 or creating a list [0,0,7] then use pop
+
+```python
+
+def spyGame(arr):
+
+code = [0,0,7]
+    for num in arr:
+        if num == code[0]:
+            code.pop(0)
+    return len(code) == 0
+```
