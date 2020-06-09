@@ -287,3 +287,26 @@ code = [0,0,7]
             code.pop(0)
     return len(code) == 0
 ```
+
+**Probelm 16** - palindrome(s):
+
+> Define a palindrome function. 
+
+>* Palindrome is when a string is the same as if you read it backwards.
+
+>* EX: palindrome("wow"), Return True
+
+>* EX: palindrome("race car"), Return True
+
+>* EX: palindrome("abbcdba") returns false
+
+```python
+
+def palindrome(s):
+    rs = s[::-1]
+    if s == rs:
+        return True
+    else:
+        return False
+```
+
